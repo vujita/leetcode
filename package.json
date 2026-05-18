@@ -1,0 +1,14 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "typescript"
+  ],
+  "scripts": {
+    "test": "npm run test --workspace=typescript",
+    "test:run": "npm run test:run --workspace=typescript",
+    "new": "bash new-problem.sh"
+  }
+}
