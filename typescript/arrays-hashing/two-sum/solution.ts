@@ -1,3 +1,6 @@
+// LeetCode:  https://leetcode.com/problems/two-sum/
+// NeetCode:  https://neetcode.io/problems/two-sum
+
 import { trace } from '../../_utils/trace.js';
 
 export function twoSum(nums: number[], target: number): number[] {
