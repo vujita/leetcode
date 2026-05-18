@@ -5,6 +5,12 @@
 // NeetCode:  https://neetcode.io/problems/contains-duplicate
 
 export function containsDuplicate(nums: number[]): boolean {
-  // TODO
+  const seen = new Set<number>()
+  for (const n of nums) {
+    if (seen.has(n)) {
+      return true
+    }
+    seen.add(n)
+  }
   return false;
 }
