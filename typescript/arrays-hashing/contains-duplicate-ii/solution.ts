@@ -6,6 +6,20 @@
 // NeetCode:  https://neetcode.io/problems/contains-duplicate-ii
 
 export function containsNearbyDuplicate(nums: number[], k: number): boolean {
-  // TODO
+  if (k === 0) {
+    return false
+  }
+  const seen = new Set<number>()
+  for (let i = 0; i < nums.length; i++) {
+    const n = nums[i]
+    if (seen.has(n)) {
+      return true
+    }
+    if (i >= k) {
+      seen.delete(nums[i - k])
+    }
+    seen.add(n)
+
+  }
   return false;
 }
