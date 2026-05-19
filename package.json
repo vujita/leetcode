@@ -13,5 +13,8 @@
   },
   "devDependencies": {
     "@xarc/run": "^2.3.0"
+  },
+  "dependencies": {
+    "vitest": "4.1.6"
   }
 }
